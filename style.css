@@ -1,0 +1,244 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+}
+.nav{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    height:70px;
+    line-height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: #3282b8;
+}
+.logo{
+    width:20%;
+    font-size: larger;
+    padding-left: 7%;
+}
+.logo>h3:hover{
+    cursor: pointer;
+}
+.tab{
+    width:70%;
+    font-size: small;
+    font-weight: 800;
+    display:flex;
+    justify-content: center;
+}
+
+.tab1{
+    width:min-content;
+    text-align: left;
+    padding-right: 4%;
+}
+
+.tab1:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.main{
+    width:100%;
+    height:500px;
+   background-image: url('aa.jpg');
+   background-size: cover;
+   text-align: center;
+}
+.main>img{
+    width:100%;
+}
+.main>h3{
+    font-size:50px;
+    font-family: 'Roboto', sans-serif;
+    color:#3282b8;
+    text-shadow: 1px 1px 2px black;
+}
+.main>h5{
+    
+    font-family: 'Roboto', sans-serif;
+    color:#3282b8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main>button{
+    width:180px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+    border: 3px solid #3282b8;
+    background-color:transparent ;
+    color:#3282b8;
+    
+}
+.main>button:hover{
+    background-color:#3282b8;
+    color:white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.top{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width:100%;
+    height: 200px;
+}
+.top>p{
+    padding-top:1%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service1{
+    
+    width:26%;
+    box-shadow: 0px 0px 10px rgb(170, 167, 167);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+
+}
+.service1>h4{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+.service1>p{
+    padding-bottom: 10px;
+}
+.about{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width:100%; 
+    background-color:#4d9bcf ;
+    color:white;
+    height: 200px;
+}
+.about>p{
+    padding-top:1%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.team{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width:100%;
+    height: 180px;
+}
+.team>p{
+    padding-top:1%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.member{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+.member1{
+    width:26%;
+    box-shadow: 0px 0px 10px rgb(192, 188, 188);
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.member1>p{
+    text-align: center;
+}
+.imgg{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+}
+.imggg{
+    
+    width:50%;
+}
+.imggg>img{
+    border-radius:50%;
+    width:30%;
+    height:50px;
+    margin-left: 10px;
+}
+.name{
+    padding-top:35px;
+}
+.contact{
+    display: flex;
+    background-color: black;
+    height: 300px;
+    justify-content: center;
+}
+.one{
+    margin-top: 10px;
+    width:30%;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7%;
+    padding-top:3%;
+}
+.one>h2{
+    font-weight: 500;
+    color:#4d9bcf ;
+}
+.one>a{
+    display: block;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 15px;
+    padding-top:10px;
+    color:white;
+}
+.one>i{
+    transition:all 0.5s ease;
+}
+.one>i:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    
+}
+
+@media(max-width:940px)
+{
+    .top{height:300px;}
+    .team{height:300px;}
+    .service1{width:40%;}
+    .member1{width:40%;}
+    .about{height: 300px;}
+    .contact{height:350;}
+}
+@media(max-width:700px)
+{
+    .top{height:350px;}
+    .team{height:350px;}
+    .service1{width:80%;}
+    .member1{width:80%;}
+    .about{height:400px;}
+}
+@media(max-width:480px)
+{
+ .nav{height:100px;}
+ .logo{width:100%;padding-left: 35%;line-height:50px;}
+ .tab{width:100%;line-height:50px;}
+ .tab1{padding-right: 2%;}
+ .contact{flex-direction:column;height: 600px;}
+ .one{width:100%;}
+ .name{padding-top:30px;}
+ .top>p{padding-left: 15%;padding-right: 15%;}
+ .team>p{padding-left: 15%;padding-right: 15%;} 
+}
